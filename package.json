@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "beenhamow-logger": "^1.0.2",
+    "discord.js": "^13.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "name": "discord.js-bot-template",
+  "version": "1.0.0",
+  "description": "A NodeJS dicscord bot template with slash commands anda command handler.",
+  "main": "index.js",
+  "scripts": {
+    "prod": "nodemon index.js",
+    "dev": "nodemon index.js dev"
+  },
+  "keywords": [
+    "discord.js",
+    "discord.js-template",
+    "bot",
+    "discord-bot",
+    "discord.js-bot",
+    "discord.js-bot-template"
+  ],
+  "author": "Ollie Beenham",
+  "license": "ISC"
+}
