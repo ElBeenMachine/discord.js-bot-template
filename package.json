@@ -7,7 +7,7 @@
     "nodemon": "^2.0.15"
   },
   "name": "discord.js-bot-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS dicscord bot template with slash commands anda command handler.",
   "main": "index.js",
   "scripts": {
