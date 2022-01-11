@@ -68,7 +68,11 @@ class bot extends Client {
 
         this.on("ready", async () => {
             if(this.environment == "DEV") {
-                await this.application.commands.set(data, this.config.DEV_GUILD).catch((e) => logger.error(e));
+                try {
+                    await this.application.commands.set(data, this.config.DEV_GUILD);
+                } catch {
+                    logger.warn("Either you supplied an invalid id for your development guild, or the bot has not joined it yet. No commands were set.");
+                }
             } else {
                 await this.application.commands.set(data).catch((e) => logger.error(e));
             }
